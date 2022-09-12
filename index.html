@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de cadastro</title>
+    <link type="text/css" rel="stylesheet" href="../pagina_de_cadastro/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <div class="header-part-columns">
+                Home
+            </div>
+
+            <div class="header-part-columns">
+                Informações
+            </div>
+
+            <div class="header-part-columns">
+                Contato
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <form>
+            <div class="nome-div">
+                <label class="nome-label" for="nome">Nome:</label>
+                <br>
+                <input class="nome-input border-input" type="text" placeholder="Entre com seu nome" required>
+            </div>
+
+            <br>
+
+            <div class="sobrenome-div">
+                <label class="sobrenome-label" for="sobrenome">Sobrenome:</label>
+                <br>
+                <input class="sobrenome-input border-input" type="text" placeholder="Entre com seu sobrenome" required>
+            </div>
+
+            <br>
+
+            <div class="idade-div">
+                <label class="idade-label" for="idade">Idade:</label>
+                <br>
+                <input class="idade-input especial-input" type="number" min="0" required>
+            </div>
+
+            <br>
+
+            <div class="tipo-documento-div">
+                <label class="tipo-documento-label" for="documento">Tipo de Documento:</label>
+                <br>
+                <select class="tipo-documento-select especial-input-select">
+                    <option selected value="rg">RG</option>
+                    <option value="cpf">CPF</option>
+                    <option value="passaporte">Passaporte</option>
+                    <!--
+                        Coloquei outros tipos de documento (CPF e Passaporte) - mantendo o mais fiel possível, então visualmente não terá diferença alguma no projeto - apenas por questões de treinar o HTML!
+                    -->
+                </select>
+            </div>
+
+            <br>
+
+            <div class="documento-div">
+                <label class="documento-label" for="documento">Documento:</label>
+                <br>
+                <input class="documento-input" type="text" minlength="0" maxlength="11"
+                    placeholder="Entre com o documento" required>
+                <!--
+                    Explicação do porquê foi colocado 'type="text"' e 'maxlength="11"':
+                    No meu projeto, por a pessoa ter a opção de inserir o RG, o CPF ou o PASSAPORTE - o que eu coloquei a mais somente para treinar HTML -, não temos certeza de qual documento ela irá inserir. Além disso, estes documentos tem composições diferentes:
+                        -> RG: composto por 7 dígitos (números) - não considerando os pontos e traço;
+                        -> CPF: composto por 11 dígitos (números) - não considerando os pontos e traço;
+                        -> PASSAPORTE: composto por 2 letras, as quais são chamadas de "série", e por 6 dígitos (números) subsequentes.
+                    Por tais motivos - principalmente pelo passaporte -, deixei o type como "text".
+                -->
+            </div>
+
+            <br>
+
+            <div class="tratamento-div">
+                <label class="tratamento-label" for="tratamento">Tratamento</label>
+                <br>
+                <input class="tratamento-input" type="radio" name="senhor"><span class="radius-style">Sr</span>
+                <input class="tratamento-input" type="radio" name="senhora" /><span class="radius-style">Sra</span>
+            </div>
+
+            <div class="botao-div">
+                <button class="botao">Enviar</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
