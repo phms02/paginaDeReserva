@@ -9,8 +9,5 @@ HTML e CSS
 ## O que aprendi a fazer neste projeto:
 Por meio desse projeto consegui aprimorar o raciocínio lógico e revisar conceitos de HTML e CSS.
 
-## Link do repositório do GitHub:
-https://github.com/phms07/Pagina-de-Reserva
-
 ## Como ficou o projeto:
 ![Captura de Tela (4)](https://user-images.githubusercontent.com/83307765/197417041-d2646aad-57a8-4128-8d6d-5f3e8328f4d8.png)
