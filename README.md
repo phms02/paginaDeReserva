@@ -1,7 +1,7 @@
 # Página de reserva
 
 ## Descrição do projeto:
-Este projeto teve como objetivo desenvolver uma <b>Página de Reserva</b>, na qual o usuário irá inserir suas informações pessoais, como nome e CPF..
+Este projeto teve como objetivo desenvolver uma <b>Página de Reserva</b>, na qual o usuário irá inserir suas informações pessoais, como nome e CPF.
 
 ## Tecnologias utilizadas:
 HTML e CSS
